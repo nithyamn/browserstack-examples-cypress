@@ -1,7 +1,5 @@
 name: GitHub Actions Demo
 on: [push]
-env:
-  PERCY_TOKEN: 912886eb00740a8dd9e5164d50453e9033294e9600cc473ed7e55ee3f9ff8e2e
 
 jobs:
   Explore-GitHub-Actions:
