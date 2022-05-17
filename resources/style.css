@@ -1,5 +1,5 @@
 body{
-	background: #2274a5;
+	background: #5CA4A9;
 	background-size:cover;
 }
 .paragraph{
@@ -20,7 +20,7 @@ body{
 .fixed-header{
     width: 100%;
     position: fixed;        
-    background: #EADEDA;
+    background: #ffe8e1;
     padding: 10px 0;
     color: #333;
 }
@@ -62,7 +62,7 @@ nav a{
 }
 p{
 	padding-bottom: 15px;
-	color: #e6af2e;
+	color: #ed6a5a;
 }
 .form-control{
 	padding: 20px;
