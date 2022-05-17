@@ -5,7 +5,7 @@ snapshot:
     - 768
     - 1280
   minHeight: 1024
-  percyCSS: ""
+  #percyCSS: ".change-font{display: none;} .fixed-header{display: none;}"
 discovery:
   allowedHostnames: []
   disallowedHostnames: []
