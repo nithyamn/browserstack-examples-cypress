@@ -1,0 +1,85 @@
+body{
+	background: #2274a5;
+	background-size:cover;
+}
+.paragraph{
+	width: 70%;
+	margin:auto;
+	margin-top: 100px;
+	padding: 50px;
+	padding-top: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #ffd400;
+	background: #fff;
+}
+.paragraph h2{
+	text-align: center;
+	padding-bottom: 5px;
+}
+.fixed-header{
+    width: 100%;
+    position: fixed;        
+    background: #EADEDA;
+    padding: 10px 0;
+    color: #333;
+}
+.fixed-header{
+    top: 0;
+}
+nav a{
+	float: right;
+	color: #333;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+#site-name{
+	float: left;
+	color: #333;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+   
+}
+
+.manage-width{
+	width: 70%;
+	margin:auto;
+	margin-top: 100px;
+	padding: 50px;
+	padding-top: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #ffd400;
+	text-align: center;
+	background: #fff;
+}
+.space{
+	margin-left:7px;
+}
+p{
+	padding-bottom: 15px;
+	color: #e6af2e;
+}
+.form-control{
+	padding: 20px;
+}
+.btn, #customBtnColor{
+	background-color: #eadeda;
+	border-color: #eadeda;
+	color: #333;
+	text-transform: uppercase;
+}
+.underline{
+	background-color: #333;
+	width: 10%;
+	height: 2px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.change-font{
+    font-family: "Lucida Console", "Courier New", monospace;
+}

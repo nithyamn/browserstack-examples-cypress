@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "types": ["cypress", "node"],
+    "types": ["cypress", "node", "@percy/cypress"],
     "rootDir": ".",
     "sourceMap": false,
     "declaration": false,

@@ -3,6 +3,7 @@ import Purchase from '../../pageObjects/purchase'
 import Signin from '../../pageObjects/signin'
 import Address from '../../pageObjects/address'
 import Orders from '../../pageObjects/orders'
+import '@percy/cypress'
 
 describe('End to End Scenario', function () {
 
@@ -24,6 +25,7 @@ describe('End to End Scenario', function () {
     cy.intercept('GET', Cypress.config().baseUrl + 'api/products').as('apiCheck')
     cy.visit('/');
     cy.wait('@apiCheck');
+    cy.percySnapshot('Visit BrowserStack Demo Website'); 
 
   })
 
@@ -32,7 +34,7 @@ describe('End to End Scenario', function () {
     cy.intercept('GET', Cypress.config().baseUrl + '_next/static/chunks/pages/signin**').as('signinCheck')
     signin.signinButton().click();
     cy.wait('@signinCheck', { timeout: 30000 });
-
+    cy.percySnapshot('Click on Sign In link');
   })
 
   it('Perform Login', function () {
@@ -40,7 +42,7 @@ describe('End to End Scenario', function () {
     login.username().should('be.visible').click({ force: true }).type(user.user4.username + '{enter}');
     login.password().click({ force: true }).type(user.user4.password + '{enter}');
     login.logInButton().click();
-
+    cy.percySnapshot('Perform Login');
   })
 
   it('Add three products to cart', () => {
@@ -48,13 +50,13 @@ describe('End to End Scenario', function () {
     purchase.item1().click({ force: true });
     purchase.item2().click({ force: true });
     purchase.item3().click({ force: true });
-
+    cy.percySnapshot('Add three products to cart');
   })
 
   it('Click on buy button', () => {
 
     purchase.buyButton().click({ force: true });
-
+    cy.percySnapshot('Click on buy button');
   })
 
   it('Update address details', () => {
@@ -64,13 +66,13 @@ describe('End to End Scenario', function () {
     address.addressline().type('test address');
     address.province().type('test province');
     address.postcode().type('123456');
-
+    cy.percySnapshot('Update address details');
   })
 
   it('Make purchase and checkout', () => {
 
     orders.checkout().click();
-
+    cy.percySnapshot('Make purchase and checkout');
   })
 
   it('Go to Orders', () => {
@@ -84,7 +86,7 @@ describe('End to End Scenario', function () {
   it('Should see elements in the list', () => {
 
     cy.get('.a-fixed-right-grid-inner.a-grid-vertical-align.a-grid-top', { "timeout": 30000 }).should('be.visible').its('length').should('equal', 3);
-
+    cy.percySnapshot('Should see elements in the list');
   })
 
 });
