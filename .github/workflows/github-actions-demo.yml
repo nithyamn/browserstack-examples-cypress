@@ -8,6 +8,9 @@ jobs:
       - name: 'Checkout the repository'
         uses: actions/checkout@v2 
 
+      - name: 'Print token value'
+        run: echo ${{ secrets.PERCY_TOKEN }}
+        
       - name: 'Install dependencies'
         run: npm install 
 
