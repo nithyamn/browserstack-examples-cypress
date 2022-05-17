@@ -4,7 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v2 
+
+      - name: 'Install dependencies'
         run: npm install
-      - name: Run test
+
+      - name: 'Run test'
         run: npx percy exec -- npm run percy-test
