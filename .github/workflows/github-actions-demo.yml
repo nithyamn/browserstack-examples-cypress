@@ -12,10 +12,8 @@ jobs:
       - name: 'Install dependencies'
         run: npm install 
 
-        uses: actions/checkout@v3
-
       - name: 'Install dependencies'
-        run: npm install --force
+        run: npm install
 
       - name: 'Start localhost server'
         run: cd resources && python3 -m http.server 3000 &
