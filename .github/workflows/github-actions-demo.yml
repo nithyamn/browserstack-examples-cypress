@@ -1,0 +1,19 @@
+name: GitHub Actions Demo
+on: [push]
+env:
+  PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v2 
+
+      - name: 'Install dependencies'
+        run: npm install 
+
+      - name: 'Start localhost server'
+        run: cd resources && python3 -m http.server 3000 &
+
+      - name: 'Run test'
+        run: npx percy exec -- npm run percy-test
