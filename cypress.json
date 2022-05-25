@@ -19,5 +19,9 @@
     "html":true,
     "json":false,
     "timestamp" : "mm/dd/yyyy_HH:MM:ss"
+  },
+  "component": {
+    "componentFolder": "src",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}"
   }
 }
