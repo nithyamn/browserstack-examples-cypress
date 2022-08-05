@@ -26,7 +26,6 @@ describe('End to End Scenario', function () {
     cy.visit('/');
     cy.wait('@apiCheck');
     cy.percySnapshot('Visit BrowserStack Demo Website'); 
-
   })
 
   it('Click on Sign In link', () => {
@@ -38,8 +37,9 @@ describe('End to End Scenario', function () {
   })
 
   it('Perform Login', function () {
-
-    login.username().should('be.visible').click({ force: true }).type(user.user4.username + '{enter}');
+    login.username().should('be.visible').click({ force: true }).type(Cypress.env('SAMPLE_ENV') + '{enter}');
+    //cy.log("ENV VAR: "+Cypress.env('SAMPLE_ENV'));
+    //login.username().should('be.visible').click({ force: true }).type(user.user4.username + '{enter}');
     login.password().click({ force: true }).type(user.user4.password + '{enter}');
     login.logInButton().click();
     cy.percySnapshot('Perform Login');

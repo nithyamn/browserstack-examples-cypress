@@ -7,9 +7,12 @@ snapshot:
   minHeight: 1024
   #percyCSS: ".change-font{display: none;} .fixed-header{display: none;}"
 discovery:
-  allowedHostnames: []
+  allowedHostnames: ["*.devs.rnd.live.backbaseservices.com", "ui-ang-showcase-app.devs.rnd.live.backbaseservices.com"]
   disallowedHostnames: []
-  networkIdleTimeout: 100
+  networkIdleTimeout: 750
+  launch-options:
+    headless: false
+  disableCache: false
 upload:
   files: "**/*.{png,jpg,jpeg}"
   ignore: ""
