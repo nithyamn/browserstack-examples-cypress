@@ -20,6 +20,9 @@
     "json":false,
     "timestamp" : "mm/dd/yyyy_HH:MM:ss"
   },
+  "env": {
+    "SAMPLE_ENV": "demouser"
+  },
   "component": {
     "componentFolder": "src",
     "testFiles": "**/*spec.{js,jsx,ts,tsx}"

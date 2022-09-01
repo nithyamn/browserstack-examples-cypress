@@ -10,7 +10,7 @@
     "cypress:open": "cypress open",
     "lint": "npx eslint --ext .ts,.js .",
     "on-prem": "npm run cypress:run",
-    "on-prem-default": "npm run cypress:run 'cypress/integration/e2e/end_to_end.spec.ts'",
+    "on-prem-default": "npm run cypress:run 'cypress/integration/e2e/end_to_end.spec.ts' --headed",
     "on-prem-suite": "npm run cypress:run",
     "docker": "npm run clean:reports && docker-compose up && docker-compose down",
     "docker-default": "npm run clean:reports && spec='cypress/integration/e2e/end_to_end.spec.ts' docker-compose up && docker-compose down",
@@ -47,6 +47,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
-    "browserstack-cypress-cli": "~1.14.0"
+    "browserstack-cypress-cli": "~1.14.1",
+    "sleep": "^6.3.0"
   }
 }
