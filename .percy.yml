@@ -2,12 +2,13 @@ version: 2
 snapshot:
   widths:
     - 375
-    - 768
     - 1280
   minHeight: 1024
-  #percyCSS: ".change-font{display: none;} .fixed-header{display: none;}"
+  scope: '.button'
+  percyCSS: ""
+  enableJavascript: true
 discovery:
-  allowedHostnames: ["*.devs.rnd.live.backbaseservices.com", "ui-ang-showcase-app.devs.rnd.live.backbaseservices.com"]
+  allowedHostnames: []
   disallowedHostnames: []
   networkIdleTimeout: 750
   launch-options:

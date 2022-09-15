@@ -413,3 +413,8 @@ In this section, we will run the test cases to test the internally hosted websit
 
  - The test `offers/offers_for_mumbai.spec.ts` does not work due to a known and recognized issue from Cypress. More information can be found [here](https://github.com/cypress-io/cypress/issues/2671).
  - Warning message `Couldn't find tsconfig.json. tsconfig-paths will be skipped` is seen because of an open issue which can be found [here](https://github.com/cypress-io/cypress/issues/9048).
+
+
+ ## Steps to start local server for Percy tests
+ - `cd resources`
+ - `python -m http.server 3000`
