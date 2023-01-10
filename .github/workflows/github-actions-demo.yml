@@ -16,4 +16,5 @@ jobs:
         run: cd resources && python3 -m http.server 3000 &
 
       - name: 'Run test'
-        run: npx percy exec -- npm run percy-test
+        # run: npx percy exec -- npm run percy-test
+        run: npm run test

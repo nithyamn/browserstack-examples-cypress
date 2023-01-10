@@ -4,7 +4,6 @@ snapshot:
     - 375
     - 1280
   minHeight: 1024
-  scope: '.button'
   percyCSS: ""
   enableJavascript: true
 discovery:
@@ -14,6 +13,7 @@ discovery:
   launch-options:
     headless: false
   disableCache: false
+  concurrency: 1
 upload:
   files: "**/*.{png,jpg,jpeg}"
   ignore: ""

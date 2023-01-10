@@ -22,7 +22,7 @@
     "bstack-local-parallel-browsers": "browserstack-cypress --config-file run_conf/bstack-local-parallel.json run --sync --parallels",
     "bstack-parallel": "browserstack-cypress --config-file run_conf/bstack-single.json run --sync --parallels",
     "bstack-parallel-browsers": "browserstack-cypress --config-file run_conf/bstack-parallel.json run --sync --parallels",
-    "percy-test": "npm run cypress:run 'cypress/integration/e2e/sample-percy.spec.ts'"
+    "percy-test": "npm run cypress:run 'cypress/integration/e2e/sample-percy.spec.ts' --headed"
   },
   "devDependencies": {
     "@cypress/react": "^5.12.5",
